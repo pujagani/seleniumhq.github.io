@@ -25,7 +25,6 @@ class NetworkCommandsTest extends BaseTest {
     @BeforeEach
     public void setup() {
         FirefoxOptions options = new FirefoxOptions();
-        options.setBinary("/Applications/Firefox Nightly.app/Contents/MacOS/firefox");
         options.setCapability("webSocketUrl", true);
         driver = new FirefoxDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
